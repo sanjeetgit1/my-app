@@ -27,6 +27,7 @@ const Header = () => {
         p={'0'}
         h={'12'}
         w={'12'}
+        zIndex={'overlay'}
         onClick={onOpen}
       >
         <BiMenuAltLeft size={'40'} />
@@ -35,20 +36,20 @@ const Header = () => {
         <DrawerOverlay/>
         <DrawerContent>
           <DrawerCloseButton backgroundColor={'red'}/>
-        <DrawerHeader>Video Hub</DrawerHeader>
+        <DrawerHeader>PROJECT HUB</DrawerHeader>
         <DrawerBody>
 <VStack align={'flex-start'}>
   <Button onClick={onClose} variant={'ghost'} colorScheme='purple' >
     <Link to={'/'}>Home</Link>
   </Button>
   <Button onClick={onClose} variant={'ghost'} colorScheme='purple' >
-    <Link to={'/videos'}>Videos</Link>
+    <Link to={'/projects'}>Projects</Link>
   </Button>
   <Button  onClick={onClose} variant={'ghost'} colorScheme='purple' >
-    <Link to={'/videos?categort=free'}>Free videos</Link>
+    <Link to={'/projects?categort=free'}>Free Projects</Link>
   </Button>
   <Button onClick={onClose} variant={'ghost'} colorScheme='purple' >
-    <Link to={'/upload'}>Upload video</Link>
+    <Link to={'/upload'}>Upload Projects</Link>
   </Button>
  
 </VStack>
