@@ -19,7 +19,7 @@ import { FaMoon, FaSun } from 'react-icons/fa';
       variant="ghost"
       color="current"
       marginLeft="2"
-      bgColor={'#FFFFFF'}
+     
       onClick={toggleColorMode}
       icon={<SwitchIcon />}
       {...props}
